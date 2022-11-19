@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewData["Title"] = "Product";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container pt-5">
+    <div class="row d-block">
+        <div class="row mb-4">
+            <div class="col" style="border-bottom: 2px solid #ffec00;">
+                <h4>Sản Phẩm</h4>
+            </div>
+        </div>
+        @for (int j = 1; j <= 6; j++)
+        {
+            <div class="row mb-5 d-flex flex-nowrap " style="gap:10px; margin-bottom:6px; height:290px">
+
+                @for (int i = 0; i <= 5; i++)
+                {<a class="product-hover" href="#">
+                        <div class="col  list-product" style="padding: 10px">
+
+                            <div class="row list-product-img">
+                                <div>
+                                    <img class="img-product" style="width:166px" src="	https://cdn.tgdd.vn/Products/Images/42/289663/iPhone-14-plus-thumb-den-600x600.jpg" />
+                                </div>
+                            </div>
+                            <div class="row" style="padding:0 0 0 15px">
+                                <span style="font-size:14px; font-weight:500">IPhone 14 Pro-max</span>
+                            </div>
+                            <div class="row">
+                                <div class="col-8">
+
+                                    <span style="font-size:16px; font-weight:700">32.000.000đ</span>
+                                </div>
+                                <div class="col-4">
+                                    <div type="button" class="btn btn-primary" style="font-size:8px">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col" style="justify-content:center">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>}
+            </div>}
+    </div>
+</div>
+
